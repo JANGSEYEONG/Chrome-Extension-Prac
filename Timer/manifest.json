@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "My Timer",
+  "version": "1.0.0",
+  "description": "Let's set a timer that sends the browser alerts!",
+  "icons": {
+    "16": "./images/icon/icon16.png",
+    "48": "./images/icon/icon32.png",
+    "128": "./images/icon/icon48.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "./images/icon/icon16.png",
+      "32": "./images/icon/icon32.png"
+    },
+    "default_title": "Setting the Timer",
+    "default_popup": "./actions/popup.html"
+  },
+  "options_page": "./options/option.html",
+  "permissions": ["storage", "alarms", "notifications"],
+  "background": {
+    "service_worker": "./service_worker/background.js"
+  }
+}
